@@ -32,6 +32,7 @@ body {
 .logo i {
     font-size: 3rem;
     margin-left: 1rem;
+    padding-right: 1rem;
 }
 
 time {
@@ -79,4 +80,13 @@ main p {
     letter-spacing: 1px;
 }
 
-@media screen and (max-width: )
+@media screen and (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col:not(:last-child) {
+        border: 0;
+        border-bottom: 2px solid #c4c4c4;
+    }
+}
